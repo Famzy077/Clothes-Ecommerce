@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "image": "./Images/T-shirt.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 2,
+        "image": "./Images/zara-nic.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 3,
+        "image": "./Images/Snakeers.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 4,
+        "image": "./Images/vuiting.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 5,
+        "image": "./Images/sneakers.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 6,
+        "image": "./Images/Shirt-blue.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 7,
+        "image": "./Images/slides.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 8,
+        "image": "./Images/slides2.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 9,
+        "image": "./Images/T-s.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 10,
+        "image": "./Images/sneaksers2.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 11,
+        "image": "./Images/amiri_slides.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 12,
+        "image": "./Images/shopping_bag.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 13,
+        "image": "./Images/pose.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 14,
+        "image": "./Images/T-shirt.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    },
+    {
+        "id": 15,
+        "image": "./Images/T-shirt.jpg",
+        "title": "Top & Short nica",
+        "description": "luxurious outfit, fit for all our ocation",
+        "price": 1000,
+        "priceBefore": 1500,
+        "wish": null
+    }
+]
