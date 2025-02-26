@@ -204,14 +204,14 @@ const FetchData = () => {
     fetch(url)
     .then(res =>  res.json())
     .then(data => data.forEach((getData) => {
-        let {id} = getData;
+        let {id} = getData;     
         console.log(id)
         let productBox = document.createElement('div');
         const displayItems = document.getElementById('displayItems')
         console.log(getData.image)
         productBox.innerHTML = `
             <div class='soap checkIndex'>
-                <div class='soap_img animate'>
+                <div class='soap_img '>
                     <img src=${getData.image} title='${getData.title}'/>
                 </div>
                 <div class="soap_box">

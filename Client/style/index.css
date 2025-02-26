@@ -7,7 +7,7 @@
 
 :root{
     --primary: gray;
-    --foreground: ;
+    --foreground: rgb(255, 51, 0);
 }
 
 /* Animation */
@@ -71,7 +71,7 @@ nav{
     display: none;
 }
 .name h1{
-    color: gray;
+    color: rgb(255, 51, 0) !important;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2em;
 }
@@ -112,7 +112,7 @@ nav ul li a:hover{
     gap: 10px;
 }
 .icons i{
-    background-color:var(--primary);
+    background-color: rgb(255, 51, 0);
     height: 40px;
     width: 40px;
     place-content: center;
@@ -255,7 +255,7 @@ ul a:focus{
     color: white;
     text-align: center;
     font-size: 4em;
-    background-color: orange;
+    background-color: rgb(255, 51, 0);
     display: grid;
     justify-content: center;
     align-items: center;
@@ -280,8 +280,8 @@ ul a:focus{
 
 /* Section 3 */
     .products{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
         gap: 50px;
     }
     #sect3 h1{
@@ -299,8 +299,8 @@ ul a:focus{
         width: 170px;
         border-radius: 30px;
     }
-    .prod:focus{
-        background-color: orange;
+    .prod:hover{
+        background-color: rgb(255, 51, 0);
         color: #fff;
     }
     .section3{
@@ -315,50 +315,48 @@ ul a:focus{
     .soap{
         background-color: white;
         width: 100%;
-        border: 2px solid orange;
+        border: 2px solid var(--foreground);
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        overflow: hidden;
         transition: 1s ease-in;
     }
-    #prod_1:active{
-        background-color: orange;
+    #prod_1:hover{
+        background-color: var(--foreground);
         color: white;
     }
-    #product_2:active{
-        background-color: orange;
+    #product_2:hover{
+        background-color: var(--foreground);
         color: white;
     }
-    #products_3:active{
-        background-color: orange;
+    #products_3:hover{
+        background-color: var(--foreground);
         color: white;
     }
     .soap:hover{
-        box-shadow:   0 0  10px  black;
+        box-shadow:   0 0  5px  black;
+    }.soap .soap_img{
+        border-bottom: 1px solid var(--foreground);
+        width: 100%;
+        overflow: hidden;
     }
     .soap .soap_img img{
         background-color: white ;
-        margin: 20px 0;
-        width: 200px;
-        height: 200px;
-        display: block;
-        transition-duration: 1s;
-    }
-    .soap .soap_img{
-        border-bottom: 1px solid orange;
         width: 100%;
-        display: grid;
-        justify-content: center;
-        transition-duration:  2s ;
+        height: 300px;
+        display: block;
+        object-fit: cover;
+        transition-duration: 1s;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
+    
 
     .soap .soap_img:hover img{ 
         transform: scale(1.1);
     }
     .soap_box{
-        display: grid;
         text-align: center;
-        justify-content: center;
-        padding: 15px 10px;
         line-height: 30px;
         color: gray;
         font-size: 1em;
@@ -370,22 +368,23 @@ ul a:focus{
         font-size: 2em;
     }
     .check{
+        margin: 15px 30px;
         padding: 10px 20px;
         border-radius: 10px;
         align-items: center;
         display: flex;
+        justify-content: space-between;
         gap: 40px;
         border: 1px solid #1d1d1d;
-        margin: 10px 0;
         text-align: center;
         box-shadow: 0 5px 10px #1d1d1d38;
     }
     .check button{
-        background-color: orange;
+        background-color: white;
         border-radius: 10px;
-        border: none;
+        border: 1px solid black;
         padding: 7px 8px;
-        color: white;
+        color: gray;
         cursor: pointer;
         font-size: 16px;
         margin-left: 10px;
@@ -398,7 +397,8 @@ ul a:focus{
         color: red;
     }
     .check button:hover{
-        background-color: rgb(43, 212, 43);
+        background-color: var(--primary);
+        border: 1px solid transparent;
         color: white;
     }
     
@@ -413,34 +413,38 @@ ul a:focus{
         gap: 30px;
     }
     .pro_box_1{
-        border: 1px solid  orange;
+        overflow: hidden;
+        border: 1px solid  var(--foreground);
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
     .pro_box_2{
+        overflow: hidden;
         border: 1px solid rgb(53, 52, 52);
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
     .pro_box_3{
+        overflow: hidden;
         border: 1px solid  rgb(44, 246, 44);
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
     .pro_img{
-        display: grid;
-        justify-content: center;
+        overflow: hidden;
     }
     .pro_img img{
         width: 100%;
         height: 350px;
-        transition-duration:  2s ;
+        transition-duration:  1s ;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
     .pro_img img:hover{
-        transform: scale(.9);
+        transform: scale(1.1);
     }
     .pro_text_1{
-        background: orange;
+        background: var(--foreground);
         padding: 20px;
         display: grid;
         justify-content: center;
@@ -496,7 +500,7 @@ ul a:focus{
         width: 250px;
     }
     .text_3{
-        background-color: orange;
+        background-color: var(--foreground);
         border-radius: 15px;
         text-align: center;
         position: relative;
@@ -511,7 +515,7 @@ ul a:focus{
     .section5{
         margin: 120px 0;
         padding: 90px;
-        background-color: orange;
+        background-color: var(--primary);
     }
 
     .section_box{
@@ -519,6 +523,9 @@ ul a:focus{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 30px;
         align-items: center;
+    }
+    .box_txt{
+        place-content: center;
     }
     .box_text p{
         font-size: 3.7em;
@@ -537,8 +544,7 @@ ul a:focus{
         font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .section_box button{
-        background-color: orange;
-        border-radius: 35px;
+        background-color: white;        border-radius: 35px;
         border: 2px solid #fff;
         padding: 6px;
         margin-top: 20px;
@@ -546,9 +552,15 @@ ul a:focus{
         padding:  9px 10px;
         transition: 1s ease-in;
     }
+    .section_box button a{
+        text-decoration: none;
+        color: black;
+    }
+    .section_box button a:hover{
+        color: white;
+    }
     .section_box button:hover{
-        background-color: rgb(33, 243, 33);
-        color: #fff;
+        background-color: var(--foreground);
     }
     .box_img img{
         display: block;
