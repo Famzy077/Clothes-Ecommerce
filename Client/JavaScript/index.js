@@ -48,6 +48,24 @@ Menu.addEventListener('click', () =>{
     }
 })
 footer.innerHTML = `Copy ${dateYear} All right reserved ${userName}`
+const email = document.forms['email'];
+email.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const emailValue = email.querySelector('input[type="email"]').value;
+    if(emailValue === ''){
+        alert('Please enter email address');
+        email.focus()
+        return
+    }
+    if(emailValue.includes('@') && emailValue.includes('.')){
+        alert('Thanks for subscribing')
+        email.focus();
+    }else{
+        alert('Invalid email email Address')
+        return;
+    }
+    email.reset()
+})
 
 const soapProducts = document.querySelectorAll('.checkIndex');
 
@@ -185,19 +203,6 @@ if (storedCart) {
     displayCart.value = likes.length;
     displayCart2.value = likes.length;
 }
-// <div class="soap checkIndex">
-//             <div class="soap_img animate">
-//                 <img src="Images/tops.jpg" alt="JoyVinco Detergent Distributor" title="JoyVinco Detergent Distributor">
-//             </div>
-//             <div class="soap_box">
-//                 <h3>Viva Green</h3>
-//                 <p>Viva Plus washing powder cleanses your clothes!</p>
-//                 <div class="check">
-//                     <strong>₦9600 <strike>₦1200</strike></strong>
-//                     <button onclick="addCart()">Wish<i class="fa-solid fa-heart"></i></button>
-//                 </div>
-//             </div>
-//         </div>
 
 const FetchData = () => {
     let url = '../product.json';

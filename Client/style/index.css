@@ -64,10 +64,12 @@ nav{
 }
 .name{
     display: flex;
+    align-items: center;
 }
 .name i{
     color:var(--foreground);
-    font-size: 1.6em;
+    font-size: 1.9em;
+    font-weight: 800;
     display: none;
 }
 .name h1{
@@ -112,7 +114,8 @@ nav ul li a:hover{
     gap: 10px;
 }
 .icons i{
-    background-color: rgb(255, 51, 0);
+    background-color: transparent;
+    border: 1px solid var(--primary);
     height: 40px;
     width: 40px;
     place-content: center;
@@ -122,7 +125,7 @@ nav ul li a:hover{
 .icons a{
     position: relative;
     font-size: 1.5em;
-    color: white;
+    color: var(--foreground);
 }
 
 ul a:focus{
@@ -435,13 +438,14 @@ ul a:focus{
     }
     .pro_img img{
         width: 100%;
+        display: block;
         height: 350px;
         transition-duration:  1s ;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
-    .pro_img img:hover{
-        transform: scale(1.1);
+    .pro_img:hover img{
+        transform: scale(1.2);
     }
     .pro_text_1{
         background: var(--foreground);
@@ -607,16 +611,17 @@ ul a:focus{
       }
     
     .box_txt button{
-        border: 1px solid orange;
+        border: 1px solid var(--primary);
         font-size: 16px;
         font-weight: 600;
         padding: 10px 21px;
         border-radius: 20px;
-        color: rgb(53, 196, 53);
+        color: var(--primary);
+        margin-top: 5px;
         transition-duration: 2s;
     }
     .box_txt button:hover{
-        background-color: orange;
+        background-color: var(--foreground);
         color: white;
     }
     #none{
@@ -653,7 +658,7 @@ ul a:focus{
         color: orange;
     }
     .progress_box h1{
-        color: rgb(19, 227, 19);
+        color: var(--primary);
     }
     .progress_box h2{
         color: #1d1d1d;
@@ -673,7 +678,7 @@ ul a:focus{
     }
     .foot_end h1{
         font-weight: 800;
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
     .foot_end h2{
         font-size: 2em;
@@ -687,7 +692,7 @@ ul a:focus{
         font-size: 20px;
     }
     .foot_end button{
-        background-color: rgb(44, 238, 44);
+        background-color: var(--primary);
         border: none;
         color: #fff;
         padding: 15px 15px;
@@ -701,7 +706,7 @@ ul a:focus{
         color: white;
     }
     .foot_endIcon i{
-        background-color: rgb(44, 238, 44);
+        background-color: var(--foreground);
         width: 50px;
         text-align: center;
         font-size: 1em;
