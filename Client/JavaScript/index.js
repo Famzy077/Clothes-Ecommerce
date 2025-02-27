@@ -61,7 +61,7 @@ email.addEventListener('submit', (e) => {
         alert('Thanks for subscribing')
         email.focus();
     }else{
-        alert('Invalid email email Address')
+        alert('Invalid  email Address')
         return;
     }
     email.reset()
